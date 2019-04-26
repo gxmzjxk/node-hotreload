@@ -1,11 +1,15 @@
+var heapdump = require('heapdump');
 // main.js
-function cleanCache(module) {
-    var path = require.resolve(module);
-    require.cache[path] = null;
+function cleanCache(modulePath) {
+    var module = require.cache[modulePath];
+    // remove reference in module.parent
+    if (module.parent) {
+        module.parent.children.splice(module.parent.children.indexOf(module), 1);
+    }
+    require.cache[modulePath] = null;
 }
 
 setInterval(function () {
-    cleanCache('./code.js');
     var code = require('./code.js');
-    console.log(code);
+    cleanCache(require.resolve('./code.js'));
 }, 5000);

@@ -152,6 +152,13 @@ fresh@0.5.2:
   resolved "http://10.10.74.103:4873/fresh/-/fresh-0.5.2.tgz#3d8cadd90d976569fa835ab1f8e4b23a105605a7"
   integrity sha1-PYyt2Q2XZWn6g1qx+OSyOhBWBac=
 
+heapdump@^0.3.12:
+  version "0.3.12"
+  resolved "http://10.10.74.103:4873/heapdump/-/heapdump-0.3.12.tgz#5623be7816a8a92ab2d42b1b422f9e829a58da89"
+  integrity sha1-ViO+eBaoqSqy1CsbQi+egppY2ok=
+  dependencies:
+    nan "^2.11.1"
+
 http-errors@1.6.3, http-errors@~1.6.2, http-errors@~1.6.3:
   version "1.6.3"
   resolved "http://10.10.74.103:4873/http-errors/-/http-errors-1.6.3.tgz#8b55680bb4be283a0b5bf4ea2e38580be1d9320d"
@@ -215,6 +222,11 @@ ms@2.0.0:
   version "2.0.0"
   resolved "http://10.10.74.103:4873/ms/-/ms-2.0.0.tgz#5608aeadfc00be6c2901df5f9861788de0d597c8"
   integrity sha1-VgiurfwAvmwpAd9fmGF4jeDVl8g=
+
+nan@^2.11.1:
+  version "2.13.2"
+  resolved "http://10.10.74.103:4873/nan/-/nan-2.13.2.tgz#f51dc7ae66ba7d5d55e1e6d4d8092e802c9aefe7"
+  integrity sha1-9R3Hrma6fV1V4ebU2AkugCya7+c=
 
 negotiator@0.6.1:
   version "0.6.1"
